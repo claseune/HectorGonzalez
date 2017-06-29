@@ -8,7 +8,6 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AuthserviceProvider } from '../providers/authservice/authservice';
 import { LoginPage } from '../pages/login/login';
-import { ListasPage } from '../pages/listas/listas';
 import { GestosPage } from '../pages/gestos/gestos';
 
 import * as firebase from 'firebase';
@@ -16,6 +15,11 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database'
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { RegistrarPage } from '../pages/registrar/registrar';
+import { AutFbPage } from '../pages/aut-fb/aut-fb';
+import { FormularioPage } from '../pages/formulario/formulario';
+import { EditarPage } from '../pages/editar/editar';
+
+
 
 export const config = {
   apiKey: "AIzaSyAQ3buE9IkEwG72V270DAXdbjg6qn12Wjk",
@@ -33,9 +37,11 @@ firebase.initializeApp(config)
     MyApp,
     HomePage,
     LoginPage,
-    ListasPage,
+    EditarPage,
     GestosPage,
-    RegistrarPage
+    RegistrarPage,
+    AutFbPage,
+    FormularioPage
   ],
   imports: [
     BrowserModule,
@@ -49,9 +55,11 @@ firebase.initializeApp(config)
     MyApp,
     HomePage,
     LoginPage,
-    ListasPage,
+    EditarPage,
     GestosPage,
-    RegistrarPage
+    RegistrarPage,
+    AutFbPage,
+    FormularioPage
   ],
   providers: [
     StatusBar,

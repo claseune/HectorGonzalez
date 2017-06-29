@@ -22,10 +22,7 @@ export class RegistrarPage {
       registerMail: ['', Validators.required],
       registerPass: ['', Validators.required]
     })
-    
-
-
- }
+     }
 
 
 
@@ -38,8 +35,6 @@ export class RegistrarPage {
         console.log(error)
       })
   }
-
-
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegistrarPage');

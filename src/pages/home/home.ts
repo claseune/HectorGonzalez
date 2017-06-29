@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
-import { ListasPage } from '../listas/listas';
+
 import { GestosPage } from '../gestos/gestos';
 import { RegistrarPage } from '../registrar/registrar';
+import { AutFbPage } from '../aut-fb/aut-fb';
+import { FormularioPage } from '../formulario/formulario';
+
 
 @Component({
   selector: 'page-home',
@@ -17,14 +20,18 @@ export class HomePage {
 goLogin() {
     this.navCtrl.push(LoginPage);
   }
-goListas() {
-    this.navCtrl.push(ListasPage);
-  }
+
 goGestos(){
   this.navCtrl.push(GestosPage)
 }  
 goRegistrar(){
   this.navCtrl.push(RegistrarPage)
 }
+goAutfb(){
+  this.navCtrl.push(AutFbPage)
+}
 
+goFormulario(){
+  this.navCtrl.push(FormularioPage)
+}
 }
